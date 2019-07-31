@@ -27,7 +27,7 @@ Create the dated header.
 \datedsection{..}{..} % modified section
 \datedsubsection{..}{..} % modifeid subsection
 ```
-Since most of the time you need to show aleast three workitems. Command below make simple to generate list of 3 items.
+Since most of the time you need to show aleast three workitems. Command below makes it simple to generate list of 3 items.
 ```
 \workitems{}{}{}
 ```
