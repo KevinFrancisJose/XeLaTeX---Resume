@@ -13,9 +13,29 @@ Resume use XeLateX complier. If your using Overleaf V.2, you can change the comp
 ```
 
 ## New Command
+Commands to create the title block. 
 ```
 {
-\namesection{..}{..}{..}{..} % Creates Header consisting of 4 arguments 1 name and 3 contacts. 
-\longernamesection{..}{..}{..}{..}{..} % Creates Header consisting of 5 argument 1 name and 4 contacts.
+\namesection{..}{..}{..}{..} % Creates title block consisting of 4 arguments 1 name and 3 contacts. 
+\longernamesection{..}{..}{..}{..}{..} % Creates title block consisting of 5 argument 1 name and 4 contacts.
+}
+```
+Generates objective in italics.  
+```
+{
+\objective{..} % Takes one argument
+}
+```
+Create the dated header.
+```{
+%  Two argument, header and time peroid
+\datedsection{..}{..} % modified section
+\datedsubsection{..}{..} % modifeid subsection
+}
+```
+Since most of the time you need to show aleast three workitems. Command below make simple to generate list of 3 items.
+```
+{
+\workitems{}{}{}
 }
 ```
