@@ -13,6 +13,12 @@
 \usepackage{color}
 \usepackage{amssymb}
 \usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{pstricks}
+
+\psset{cornersize=absolute,linearc=.5\baselineskip}
+% Path to images %
+\graphicspath{ {.res/images/} }
 
 % Define some basic Colours %
 %Custom Colors
@@ -21,7 +27,7 @@
 \definecolor{body}{gray}{0.35}
 \definecolor{sub}{gray}{0.26}
 
-%........................................MODIFIED.COMMAND..............................................%
+%........................................MODIFIED.COMMAND.........................................%
 
 %modified section command
 \titleformat{\section}         % Customise the \section command 
@@ -37,8 +43,13 @@
   {}{0em}
   {}
 
+ %modified subsubsection command 
+\titleformat{\subsubsection} % Customise the \subsection command 
+  {\fontspec[Path = res/fonts/Antic/]{Antic-Regular}\color{body}\large\fontsize{10pt}{10pt}\vspace{7pt}\scshape\raggedright}
+  {}{0em}
+  {}
 
-%............................................NEW.COMMANDS...............................................% 
+%............................................NEW.COMMANDS............................................% 
 
 % data section v.1 %
 \newcommand{\datedsection}[2]{%
@@ -52,7 +63,7 @@
 
 % Lists%
 \newcommand{\workitems}[3]{% 
-    \fontspec[Path = res/fonts/Antic/]{Antic-Regular}\color{body}\large\fontsize{9pt}{10pt}\vspace{5pt}\begin{itemize}
+    \fontspec[Path = res/fonts/Antic/]{Antic-Regular}\color{body}\fontsize{10pt}{10pt}\vspace{5pt}\begin{itemize}
     \item #1
     \item #2
     \item #3
@@ -77,5 +88,40 @@
 	   \vspace{5pt}
 }
 
+% Name and contacts info long version %
+\newcommand{\longnamesection}[5]{
+	   
+	   \centering
+	   { 
+	   \fontspec[Path = res/fonts/Quicksand/]{Quicksand-Light}\color{header}\fontsize{45pt}{10cm}\selectfont  #1
+	   \fontspec[Path = res/fonts/Quicksand/]{Quicksand-Regular}\color{sub} #2
+	   } \\
+	   \vspace{5pt}\hspace{1pt}
+	   \centering\color{body}\fontspec[Path = res/fonts/Quicksand/]{Quicksand-Light}\fontsize{10pt}{10pt}\selectfont #3 \\
+	   
+	   \vspace{1pt} \hspace{1pt}
+	   \centering\color{body}\fontspec[Path = res/fonts/Quicksand/]{Quicksand-Light}\fontsize{10pt}{10pt}\selectfont #4 \\
+	   \vspace{3pt} \\
+	   \centering\color{body}\fontspec[Path = res/fonts/Quicksand/]{Quicksand-Light}\fontsize{10pt}{10pt}\selectfont #5 \\
+	   \noindent\makebox[\linewidth]{\rule{590pt}{1.0pt}} 
+	   \vspace{5pt}
+}
+
 % command to write objective %
 \newcommand{\objective}[1]{\fontspec[Path = res/fonts/Opensans/]{OpenSans-RegularItalic}\color{body}\fontsize{12pt}{10pt}\selectfont #1}
+
+% command for skill level bar %
+\newcommand{\grade}[1]{
+    \begin{tikzpicture}
+    \clip (1em-.3em,-.3em) rectangle (5em +.5em ,.3em);
+    \begin{scope}
+    \clip (1em-.3em,-.3em) rectangle (#1em +.5em ,.3em);
+    \foreach \x in {1,2,...,5}{
+     \path[fill=gray] (\x em,0) circle (.25em);
+    }
+    \end{scope}
+    \foreach \x in {1,2,...,5}{
+    \draw (\x em,0) circle (.25em);
+    }
+    \end{tikzpicture}%
+}

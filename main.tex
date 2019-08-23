@@ -1,26 +1,57 @@
+%%
+%%
+%%
+
 \documentclass{resume}
 \begin{document}
-\namesection{Abc}{Fxxxxx Jxx}{abcxxxxx@xyz.com | (XXX) XXX-XXXX}{XXX Some Dr, Apt\#XXXX, ACITYXXXX SA-ZIPCODE} 
+
+%.................................. NAME SECTION............................................. %
+\namesection{Abc} % fIRST nAME
+{Fxxxxx Jxx} % MIDDLE NAME AND LAST NAME
+{abcxxxxx@xyz.com | (XXX) XXX-XXXX} % EMAIL ADDRESS AND PHONE NUMBER
+{XXX Some Dr, Apt\#XXXX, ACITYXXXX SA-ZIPCODE} % ADDRESS 
+% .................................OBJECTIVE..................................................%
 \begin{flushleft}
 \objective{Write how to your personal and career objectives here. Tell them how creative your are. Flexible, motivated, etc. }
 \end{flushleft}
-\begin{minipage}{0.25\textwidth}
-\subsection{SKILLS}
-\workitems
-{Developed new }
-{Improved }
-{Decreased }
-\subsection{SKILLS}
-\workitems
-{Developed new }
-{Improved }
-{Decreased }
-\subsection{SKILLS}
-\workitems
-{Developed new }
-{Improved }
-{Decreased }
+%...................................LEFT BAR..................................................%
+\begin{minipage}{0.33\linewidth} 
+\subsection{TECHNICAL SKILLS}
+\subsubsection{PROGRAMMING LANGUAGES}
+\begin{itemize}
+    \item C | C++   \grade{4}
+    \item Python \grade{4.5}
+    \item Rust   \grade{3}
+    \item Java \grade{3}
+\end{itemize}
+\subsubsection{TECHNOLOGIES}
+\begin{itemize}
+    \item MATLAB \grade{3}
+    \item PyTorch \grade{3}
+    \item OpenGL   \grade{2.5}
+    \item OpenCV \grade{2.5}
+    \item Apache Spark   \grade{2}
+    \item Linux \grade{2.5}
+\end{itemize}
+\subsubsection{SOFT SKILLS}
+\psframebox{Problem Solving} \psframebox{Self-Motivated} \\
+\psframebox{Teamwork} 
+\psframebox{Communication}
+\subsubsection{PROGRAMMING LANGUAGES (FAMILIAR)}
+\begin{itemize}
+    \item HTML | CSS  
+    \item Assembly
+    \item C\#
+    \item Scala
+    \item \LaTeX
+\end{itemize}
+\subsection{LINKS}
+\begin{itemize}
+\item Linkedln :  \href{https://www.linkedin.com/}{www.linkedin.com}
+\item Github : \href{https://github.com}{www.github.com}
+\end{itemize}
 \end{minipage}%
+%...................................RIGHT SIDE..................................................%
 \begin{minipage}{0.75\textwidth} 
 \section{EDUCATION}
 \datedsubsection{University of Nowhere}{2011--2015}
@@ -48,12 +79,14 @@ I attended the University of Nowhere from 2004 to 2008.
 {Developed new product}
 {Improved productivity by 20\%}
 {Decreased costs by \$10,000}
-\datedsubsection{SOMETHINMG}{2011--2015}
+\section{VOLUNTEER EXPERIENCE}
+\datedsubsection{XXX Co.}{2015--2016}
 \workitems
-{Developed new product}
-{Improved productivity by 20\%}
-{Decreased costs by \$10,000}
+{dsdsad k;sad.}
+{ were up to standard.}
+{ videos.}
 \end{minipage}
+%.....................................BOTTOM SECTION..............................................%
 \section{Skills} 
 \begin{tabular}{l l l l} \\
 C\# & T-SQL & Javascript & HTML \\
