@@ -4,92 +4,126 @@
 
 \documentclass{resume}
 \begin{document}
-
-%.................................. NAME SECTION............................................. %
-\namesection{Abc} % fIRST nAME
-{Fxxxxx Jxx} % MIDDLE NAME AND LAST NAME
-{abcxxxxx@xyz.com | (XXX) XXX-XXXX} % EMAIL ADDRESS AND PHONE NUMBER
-{XXX Some Dr, Apt\#XXXX, ACITYXXXX SA-ZIPCODE} % ADDRESS 
-% .................................OBJECTIVE..................................................%
-\begin{flushleft}
-\objective{Write how to your personal and career objectives here. Tell them how creative your are. Flexible, motivated, etc. }
-\end{flushleft}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% NAME SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{minipage}{0.55\linewidth}
+\name
+    {ALICE} {WONDER} % Name {first} {last} 
+    {Professional Rabbit Chaser} % Professional Title
+\color{black}
+\end{minipage}%
+%$$$$$$$$$$$$$$$$$$$$$$$$$ CONTACT..SECTION $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$%
+\vspace{10pt}
+\begin{minipage}{0.45\linewidth}
+\contact
+    {(123) 456-7890} % Phone number
+    {alicewonder@madhatter.in} % Email 
+    {Cake St, Apt XX, Nowhere, NW 11111} % Address
+    {https://www.linkedin.com/in/alice-123-312321-2ad2/} % Linked in Profile
+    {Teaparty, underland, OO} % Location
+\end{minipage}%
+\\
+\noindent\makebox[\linewidth]{\rule{590pt}{1.0pt}} \vspace{5pt}
 %...................................LEFT BAR..................................................%
-\begin{minipage}{0.33\linewidth} 
-\subsection{TECHNICAL SKILLS}
-\subsubsection{PROGRAMMING LANGUAGES}
+\vspace{10pt}
+\begin{minipage}{0.60\linewidth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%% WORK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{WORK EXPERIENCE}
+ \fontspec[Path=res/fonts/Quicksand/]{Quicksand-Regular}\color{sub}\large
+ \subsection{Senior Dreamer, White Queen Army}
+\sub{Cheshire Cat} \\
+\fontspec[Path=res/fonts/Opensans/]{OpenSans-RegularItalic}\color{sub}\fontsize{10pt}{10pt}\faCalendar \vspace{1pt} 
+\fontspec[Path=res/fonts/Opensans/]{OpenSans-RegularItalic}\color{sub}\fontsize{10pt}{10pt}Aug 2017 - May 2019
 \begin{itemize}
-    \item C | C++   \grade{4}
-    \item Python \grade{4.5}
-    \item Rust   \grade{3}
-    \item Java \grade{3}
+\fontspec[Path=res/fonts/Quicksand/]{Quicksand-Medium}\color{sub}\fontsize{12pt}{10pt}
+    \item \xbody{y began at Folly Bridge near Oxford and ended five miles away in the village of Godstow. During the trip Charles Dodgson told the girls a story that featured a bored little girl named Alice who goes looking for an adventure.}
+    \item \xbody{ told the girls a story that featured a bored little girl named Alice who goes looking for an adventure. The girls loved it, and Alice Liddell asked Dodgson to write it down for her. He began writing.}
+    \item \xbody{ut before Alice received her copy, Dodgson was already preparing it for publication and expanding the 15,500-word original to 27,500 words}
 \end{itemize}
-\subsubsection{TECHNOLOGIES}
+ \subsection{Big Girl, Red Queen Clique}
+\sub{Lobster Quadrille} \\
+\fontspec[Path=res/fonts/Opensans/]{OpenSans-RegularItalic}\color{sub}\fontsize{10pt}{10pt}\faCalendar \vspace{1pt} 
+\fontspec[Path=res/fonts/Opensans/]{OpenSans-RegularItalic}\color{sub}\fontsize{10pt}{10pt}Aug 2017 - May 2019
 \begin{itemize}
-    \item MATLAB \grade{3}
-    \item PyTorch \grade{3}
-    \item OpenGL   \grade{2.5}
-    \item OpenCV \grade{2.5}
-    \item Apache Spark   \grade{2}
-    \item Linux \grade{2.5}
+\fontspec[Path=res/fonts/Quicksand/]{Quicksand-Medium}\color{sub}\fontsize{12pt}{10pt}
+    \item \xbody{ears, is feeling bored and drowsy while sitting on the riverbank with her elder sister.}
+    \item \xbody{ears, is feeling bored and drowsy while sitting on the riverbank with her elder sister. Sheos. She finds a small key to a door too small for her to fit through, but through it she sees an attractive garden. She then discovers as}
+    \item \xbody{The girls loved it, and Alice Liddell asked Dodgson to write it down for her. He began writing}
 \end{itemize}
-\subsubsection{SOFT SKILLS}
-\psframebox{Problem Solving} \psframebox{Self-Motivated} \\
-\psframebox{Teamwork} 
-\psframebox{Communication}
-\subsubsection{PROGRAMMING LANGUAGES (FAMILIAR)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.Voluteer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{VOLUNTEER EXPERIENCE}
+ \fontspec[Path=res/fonts/Quicksand/]{Quicksand-Regular}\color{sub}\large
+ \subsection{Senior Manager, Design Committee}
+\sub{Ragam 2016} \\
+\fontspec[Path=res/fonts/Opensans/]{OpenSans-RegularItalic}\color{sub}\fontsize{10pt}{10pt}\faCalendar \vspace{1pt} 
+\fontspec[Path=res/fonts/Opensans/]{OpenSans-RegularItalic}\color{sub}\fontsize{10pt}{10pt}Aug 2017 - May 2019
+%%%%%%%%%%%%%%%%%%%%%%% OTHER THINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{OTHER THINGS} \vspace{3pt}
 \begin{itemize}
-    \item HTML | CSS  
-    \item Assembly
-    \item C\#
-    \item Scala
-    \item \LaTeX
-\end{itemize}
-\subsection{LINKS}
-\begin{itemize}
-\item Linkedln :  \href{https://www.linkedin.com/}{www.linkedin.com}
-\item Github : \href{https://github.com}{www.github.com}
+\fontspec[Path=res/fonts/Quicksand/]{Quicksand-Medium}\color{sub}\fontsize{12pt}{10pt}
+    \item PUBLICATIONS feeling bored and drowsy while sitting on the riverbank with her elder sister. Sheos. She finds a small key to a door too small for her to fit through, but through it she sees an attractive garden. She then discovers as ng bored and drowsy while sitting on theriverbank with her 
+    \item PERSONAL PROJECTS ng bored and drowsy while sitting on theriverbank with her elder sister elder sister and brother cat hat mat boat xx blah blah
+    \item AWARDS ng bored and drowsy while sitting on theriverbank with her elder sisterelder sister and brother cat hat mat boat xx blah blah
+    \item COURSEWORK, etc feeling bored and drowsy while sitting on the riverbank with her elder sister. Sheos. She finds a small key to a door too small for her to fit through, but through it she sees an attractive garden. She then discovers as
 \end{itemize}
 \end{minipage}%
-%...................................RIGHT SIDE..................................................%
-\begin{minipage}{0.75\textwidth} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RIGHT SIDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hspace{15pt}
+\begin{minipage}{0.35\linewidth}
+\color{black}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Education %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{EDUCATION}
-\datedsubsection{University of Nowhere}{2011--2015}
-I attended the University of Nowhere from 2004 to 2008.
-\\
-\section{WORK}
-\datedsubsection{ABCX Co.}{2011--2015}
-\workitems
-{Developed new }
-{Improved }
-{Decreased }
-\datedsubsection{XYZ Limited}{2011--2015}
-\workitems
-{Developed new product}
-{Improved productivity by 20\%}
-{Decreased costs by \$10,000}
-\section{PROJECTS}
-\datedsubsection{SOMETHINMG}{2011--2015}
-\workitems
-{Developed new product}
-{Improved productivity by 20\%}
-{Decreased costs by \$10,000}
-\datedsubsection{SOMETHINMG}{2011--2015}
-\workitems
-{Developed new product}
-{Improved productivity by 20\%}
-{Decreased costs by \$10,000}
-\section{VOLUNTEER EXPERIENCE}
-\datedsubsection{XXX Co.}{2015--2016}
-\workitems
-{dsdsad k;sad.}
-{ were up to standard.}
-{ videos.}
+\subsection{Masters. in Computer Science}
+\fontspec[Path=res/fonts/Quicksand/]{Quicksand-SemiBold}\color{body}\fontsize{10pt}{10pt} University Of Twins At Twins \\ \vspace{3pt}
+\fontspec[Path=res/fonts/Opensans/]{OpenSans-RegularItalic}\color{sub}\fontsize{10pt}{10pt}\faCalendar \vspace{1pt} Aug 2017 - May 2019 \\ \vspace{3pt}
+\fontspec[Path=res/fonts/Quicksand/]{Quicksand-SemiBold}\color{sub}\fontsize{10pt}{10pt} GPA : inf.83 \vspace{3pt}
+\subsection{B.Tech in Computer Science}
+\fontspec[Path=res/fonts/Quicksand/]{Quicksand-SemiBold}\color{body}\fontsize{10pt}{10pt} University Of Twins At Twins \\ \vspace{3pt}
+\fontspec[Path=res/fonts/Opensans/]{OpenSans-RegularItalic}\color{sub}\fontsize{10pt}{10pt}\faCalendar \vspace{1pt} Jul 2012 - May 2016 \vspace{3pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SKILLs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{SKILLS}
+\subsection{Programming Languages}
+\vspace{.05cm}
+\skills{Python}{.8}
+\skills{C++}{.75}
+\skills{Rust}{.65}
+\skills{Scala}{.5}
+\skills{Java}{.45}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ADDITIONAL SKILSS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Familiar Languages}
+\psframebox{C\#}
+\psframebox{Lua}
+\psframebox{HTML}
+\psframebox{CSS}
+\psframebox{MATLAB}
+\psframebox{Shell}
+\psframebox{\LaTeX}
+\subsection{Other Skills}
+\psframebox{Linux}
+\psframebox{PyTorch}
+\psframebox{TensorFlow}
+\psframebox{OpenGL}
+\psframebox{GLSL}
+\psframebox{OpenCV}
+\psframebox{GIT}
+\psframebox{Unity Engine}
+\psframebox{Junit}
+\psframebox{Numpy}
+\psframebox{Scikit-Learn}\\
+\vspace{3pt}\hdashrule{\linewidth}{1pt}{3pt}
+\psframebox{Team player}\psframebox{Problem Solver}\psframebox{Self-Motivated}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% AWRADS And  CERFICATIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{CERTIFICATIONS}
+\begin{itemize}
+    \renewcommand{\labelitemi}{\large\faSunO}
+    \item\xboldbody{Coursera :- Improving netherland copying other show and somekind of Optimization is required maybe}
+    \item\xboldbody{DANcEing something app xx yyy}
+    \item\xboldbody{Coursera :- eHatter speicaliztion with bounus pointsh}
+    \item\xboldbody{Coursera :- flower painting basic in wonderland}
+    \item\xboldbody{Coursera :- Evil queen something white good probably i dont know}
+\end{itemize}
 \end{minipage}
 %.....................................BOTTOM SECTION..............................................%
-\section{Skills} 
-\begin{tabular}{l l l l} \\
-C\# & T-SQL & Javascript & HTML \\
-XML & JSON & SOAP & REST
-\end{tabular}
+\color{black} 
 \end{document}
